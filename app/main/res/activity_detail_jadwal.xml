@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg"
+tools:context=".View.jadwal.detail_jadwal">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Jadwal Bank Sampah "
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:layout_marginTop="65dp"
+    android:layout_marginStart="24dp" />
+
+<ImageView
+    android:id="@+id/imageView5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:src="@drawable/framelistdetail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.354"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="0dp" />
+
+<TextView
+    android:id="@+id/textView13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Jadawal Bank sampah"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.307"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.235"
+    tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal "
+        android:textColor="@color/textlist"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+    android:id="@+id/tv_j_tanggal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="22/01/2025"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.718"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.297"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hari "
+    android:textColor="@color/textlist"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.197"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.352"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/tv_j_hari"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Rabu"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.689"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.351"
+    tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        android:textColor="@color/textlist"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+    android:id="@+id/tv_jwaktu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="10:00 s/d 13:00"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.727"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.393"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/textView17"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tempat"
+    android:textColor="@color/textlist"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.217"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.449"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/tv_j_tempat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Balai Warga Rw 017"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.722"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.449"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/textView11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Catatan "
+    android:textColor="@color/textlist"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.204"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.499"
+    tools:ignore="MissingConstraints" />
+
+    <TextView
+    android:id="@+id/tv_j_catatan"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:text="Optional"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.776"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.499"
+    tools:ignore="MissingConstraints" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

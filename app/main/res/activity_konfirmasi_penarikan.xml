@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.View.penarikan_saldo.konfirmasi_penarikan">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarkonfrimpenarikan"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="Konfirmasi Penarikan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/lime"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_info"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Mohon Periksa Kembali Data Penarikan"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/k_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/bg_green"
+                        android:hint="Nama"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:focusableInTouchMode="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/k_tanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/bg_green"
+                        android:hint="Tanggal"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:focusableInTouchMode="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saldo Awal"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/k_saldo_awal"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/bg_green"
+                            android:hint="0"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:focusableInTouchMode="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Penarikan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/k_jml_penarikan"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/bg_green"
+                            android:hint="0"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:focusableInTouchMode="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saldo Akhir"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/k_saldo_akhir"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/bg_green"
+                            android:hint="0"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:focusableInTouchMode="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/k_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/bg_green"
+                        android:hint="Status"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:focusableInTouchMode="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kode OTP"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/k_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/bg_green"
+                        android:hint="Silahkan Massukkan Kode Otp"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btndiproses"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Di Proses"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.MaterialComponents"
+                android:backgroundTint="@color/bg_green"
+                app:cornerRadius="50dp"
+                android:elevation="5dp"
+                app:rippleColor="@color/bg_btn_green"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

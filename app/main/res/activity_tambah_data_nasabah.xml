@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.RegisterActivity"
+    android:background="@color/light_gray">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_input_head"
+            android:layout_marginTop="50dp"
+            android:text="From Input Data Nasabah"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tb_nama"
+            android:layout_below="@id/textView_input_head"
+            android:text="Nama Lengkap*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/editText_tb_Nama"
+            android:layout_below="@id/tb_nama"
+            android:hint="Silahkan Masukkan Nama"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tb_alamat"
+            android:layout_below="@id/editText_tb_Nama"
+            android:text="Alamat*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/editText_tb_alamat"
+            android:layout_below="@id/tb_alamat"
+            android:hint="Silahkan Masukkan Alamat"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_password"
+            android:layout_below="@id/editText_tb_alamat"
+            android:text="Password*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/editText_tb_password"
+            android:layout_below="@id/textView_tb_password"
+            android:hint="Silahkan Masukkan Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_confirm_password"
+            android:layout_below="@id/editText_tb_password"
+            android:text="Konfirmasi Password*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/editText_tb_confirm_password"
+            android:layout_below="@id/textView_tb_confirm_password"
+            android:hint="Konfirmasi Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_email"
+            android:layout_below="@id/editText_tb_confirm_password"
+            android:text="Email*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/editText_tb_email"
+            android:layout_below="@id/textView_tb_email"
+            android:hint="Silahkan Masukkan email "
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_dob"
+            android:layout_below="@id/editText_tb_email"
+            android:text="Tanggal Lahir (dd/mm/yyyy)*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/editText_tb_dob"
+            android:layout_below="@id/textView_tb_dob"
+            android:hint="Silahkan Masukkan Tanggal Lahir (dd/mm/yyyy) "
+            android:focusable="false"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_gender"
+            android:layout_below="@id/editText_tb_dob"
+            android:text="Gender*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textView_tb_gender"
+            android:id="@+id/radioGroup_tb_Gender">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:text="Female"
+                android:textSize="16sp"
+                android:textColor="#555555"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/radio_male"
+                android:text="Male"
+                android:textSize="16sp"
+                android:textColor="#555555"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_status"
+            android:layout_below="@id/radioGroup_tb_Gender"
+            android:text="Status*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textView_tb_status"
+            android:id="@+id/radioGroup_tb_status">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_user"
+                android:text="User"
+                android:textSize="16sp"
+                android:textColor="#555555"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/radio_admin"
+                android:text="Admin"
+                android:textSize="16sp"
+                android:textColor="#555555"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tb_mobile"
+            android:layout_below="@id/radioGroup_tb_status"
+            android:text="No Handphone*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_tb_mobile"
+            android:layout_below="@id/textView_tb_mobile"
+            android:hint="Silahkan Masukkan No Hp"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:background="@drawable/border"
+            />
+
+        <Button
+            android:id="@+id/button_tb_tamabh_nasabah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_tb_mobile"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="70dp"
+            android:text="Tambah Data Nasabah" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
