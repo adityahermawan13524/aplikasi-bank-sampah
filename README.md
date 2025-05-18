@@ -1,5 +1,10 @@
 # aplikasi-bank-sampah
 aplikasi bank sampah berbasis android dengan database phpmysql menggunakan bahasa java
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/79ef849a-b0c3-4932-80aa-45c2d458ec15)
 ![image](https://github.com/user-attachments/assets/4457f520-e21f-4d96-84f4-139bc0d88bd3)
 ![image](https://github.com/user-attachments/assets/4f38e97c-566b-4762-9fae-fda1af2e9d1b)
